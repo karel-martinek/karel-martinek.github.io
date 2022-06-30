@@ -1,0 +1,13 @@
+:root {
+    --navbar-height: 56px;
+}
+
+/* To make up for fixed-top navigation bar height */
+body {
+    padding-top: var(--navbar-height);
+}
+
+/* To make up for fixed-top navigation bar height while scrolling */
+div {
+    scroll-margin-top: var(--navbar-height);
+}
