@@ -11,3 +11,9 @@ body {
 div {
     scroll-margin-top: var(--navbar-height);
 }
+
+/* Footer */
+.footer > div > div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
