@@ -17,3 +17,8 @@ div {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
