@@ -29,7 +29,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Domu page background */
+/* Domu page styles */
 .domu-bg {
     background-image: url("images/domu_bg.jpg");
     height: 100%;
@@ -82,6 +82,11 @@ html {
     overflow: hidden;
     padding-top: 3%;
     padding-bottom: 2%;
+    transition: 0.1s all ease-in-out;
+}
+
+.domu-button:hover {
+    transform: scale(1.1);
 }
 
 .domu-button > div {
@@ -95,12 +100,15 @@ html {
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    user-select: none;
 }
 
 .domu-button > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .drop-shadow {
