@@ -17,7 +17,7 @@ body {
 
 /* To make up for fixed-top navigation bar height while scrolling */
 div {
-    scroll-margin-top: var(--navbar-height);/* calc(var(--navbar-height) - 1px); */
+    scroll-margin-top: calc(var(--navbar-height) - 1px);
 }
 
 /* Footer */
