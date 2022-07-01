@@ -76,6 +76,9 @@ html {
     .domu-text > p {
         font-size: 16px;
     }
+    .domu-button > div > h3 {
+        font-size: 20px;
+    }
 }
 
 .domu-button {
