@@ -22,7 +22,7 @@ div {
 
 /* Footer */
 .footer {
-    margin-bottom: 0;
+    padding-top: 15px;
 }
 
 .footer > div > div {
@@ -45,8 +45,8 @@ html {
 
 /* Section header */
 .section-head {
-    background-color: var(--color-dark-bg);
-    color: white;
+    /* background-color: var(--color-dark-bg);
+    color: white; */
     border-radius: 0;
 }
 
