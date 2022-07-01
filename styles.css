@@ -2,6 +2,8 @@
     --navbar-height: 56px;
     --color-dark-bg: rgb(41, 43, 51);
     --color-light-text: rgb(255, 255, 255);
+    --color-link: lightblue;
+    --color-section-head-bg: #616263;
 }
 
 body, html {
@@ -15,18 +17,53 @@ body {
 
 /* To make up for fixed-top navigation bar height while scrolling */
 div {
-    scroll-margin-top: var(--navbar-height);
+    scroll-margin-top: calc(var(--navbar-height) - 1px);
 }
 
 /* Footer */
+.footer {
+    margin-bottom: 0;
+}
+
 .footer > div > div {
     padding-left: 5%;
     padding-right: 5%;
 }
 
+.footer > div > div > svg {
+    color: white;
+}
+
+.footer > div > div > a {
+    color: var(--color-link);
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Section header */
+.section-head {
+    background-color: var(--color-dark-bg);
+    color: white;
+    border-radius: 0;
+}
+
+@media (min-width: 1200px) {
+    .section-head > p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1199.98px) {
+    .section-head > p {
+        font-size: 20px
+    }
+}
+@media (max-width: 599.98px) {
+    .section-head > p {
+        font-size: 15px;
+    }
 }
 
 /* Domu page styles */
