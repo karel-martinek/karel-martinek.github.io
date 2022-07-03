@@ -4,6 +4,7 @@
     --color-light-text: rgb(255, 255, 255);
     --color-link: lightblue;
     --color-section-head-bg: #616263;
+    --color-brackground: rgb(250, 250, 250);
 }
 
 body, html {
@@ -13,6 +14,7 @@ body, html {
 /* To make up for fixed-top navigation bar height */
 body {
     padding-top: var(--navbar-height);
+    background-color: var(--color-brackground);
 }
 
 /* To make up for fixed-top navigation bar height while scrolling */
@@ -41,6 +43,11 @@ div {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Section */
+.section {
+    margin-bottom: 15px;
 }
 
 /* Section header */
@@ -155,4 +162,40 @@ html {
     -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
     border-radius :5px;
+}
+
+/* Email form */
+#emailForm {
+    margin-bottom: 15px;
+}
+
+#emailForm > input {
+    margin-bottom: 5px;
+}
+
+#emailForm > input:last-of-type {
+    height: 190px;
+}
+
+#emailForm > button {
+    width: 100%;
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text);
+    font-weight: bold;
+}
+
+/* Google map */
+#map {
+    border: 0;
+    width: 100%;
+    height: 450px;
+}
+
+/* Contact details */
+.contact-details {
+    margin-bottom: 15px;
+}
+
+.contact-details > div > div > svg {
+    margin-right: 5px;
 }
