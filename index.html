@@ -222,7 +222,7 @@
         <div class="col-md-12 col-lg-6">
           <h3>Kontaktní údaje</h3>
           <div class="row contact-details">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
               <!-- Person icon -->
               <div class="fs-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -246,10 +246,13 @@
                 <a href="mailto:karel.martinek@volny.cz">karel.martinek@volny.cz</a>
               </div>
             </div>
-            <div class="col-6">
-              Budapešťská 2706 / 5</br>
-              Děčín 405 02</br>
-              Ústecký kraj
+            <div class="col-sm-12 col-md-6 fs-4 row address-text">
+              <!-- Location icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              <div>Budapešťská 2706 / 5</br>&nbsp;Děčín 405 02</br>&nbsp;Ústecký kraj</div>
             </div>
           </div>
           <h3>Emailový formulář</h3>
@@ -257,7 +260,7 @@
             <input type="text" name="name" placeholder="Jméno" required class="form-control">
             <input type="email" name="email" placeholder="Email" required class="form-control">
             <input type="text" name="_honey" style="display:none">
-            <input type="text" name="message" placeholder="Váš dotaz" required class="form-control">
+            <textarea name="message" placeholder="Váš dotaz" required class="form-control"></textarea>
             <button type="submit" class="btn">Odeslat</button>
           </form>
         </div>

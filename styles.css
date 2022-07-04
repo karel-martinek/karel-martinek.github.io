@@ -173,8 +173,10 @@ html {
     margin-bottom: 5px;
 }
 
-#emailForm > input:last-of-type {
+#emailForm > textarea {
     height: 190px;
+    resize: none;
+    margin-bottom: 5px;
 }
 
 #emailForm > button {
@@ -196,6 +198,17 @@ html {
     margin-bottom: 15px;
 }
 
-.contact-details > div > div > svg {
+.contact-details svg {
     margin-right: 5px;
+}
+
+.address-text {
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-left: 0;
+    text-indent: 5px;
+}
+
+.address-text > div {
+    margin-top: -5px;
 }
