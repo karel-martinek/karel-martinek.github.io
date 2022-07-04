@@ -5,6 +5,7 @@
     --color-link: lightblue;
     --color-section-head-bg: #616263;
     --color-brackground: rgb(250, 250, 250);
+    --color-text-black: #212529;
 }
 
 body, html {
@@ -18,8 +19,8 @@ body {
 }
 
 /* To make up for fixed-top navigation bar height while scrolling */
-div {
-    scroll-margin-top: calc(var(--navbar-height) - 1px);
+html {
+    scroll-padding-top: calc(var(--navbar-height) - 1px);
 }
 
 /* Footer */
